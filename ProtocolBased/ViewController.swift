@@ -12,6 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        URLSessionClient().send(UserRequest(name: "onevcat")) { user in
+            if let user = user {
+                print("\(user.message) from \(user.name)")
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
