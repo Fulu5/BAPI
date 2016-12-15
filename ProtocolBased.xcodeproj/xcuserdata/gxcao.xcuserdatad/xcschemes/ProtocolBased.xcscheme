@@ -5,6 +5,22 @@
    <BuildAction
       parallelizeBuildables = "YES"
       buildImplicitDependencies = "YES">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0C1C04151E0292A200D7A43E"
+               BuildableName = "ProtocolBased.app"
+               BlueprintName = "ProtocolBased"
+               ReferencedContainer = "container:ProtocolBased.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
    </BuildAction>
    <TestAction
       buildConfiguration = "Debug"
@@ -12,7 +28,36 @@
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0C1C04291E0292A300D7A43E"
+               BuildableName = "ProtocolBasedTests.xctest"
+               BlueprintName = "ProtocolBasedTests"
+               ReferencedContainer = "container:ProtocolBased.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "0C1C04341E0292A300D7A43E"
+               BuildableName = "ProtocolBasedUITests.xctest"
+               BlueprintName = "ProtocolBasedUITests"
+               ReferencedContainer = "container:ProtocolBased.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "0C1C04151E0292A200D7A43E"
+            BuildableName = "ProtocolBased.app"
+            BlueprintName = "ProtocolBased"
+            ReferencedContainer = "container:ProtocolBased.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
       <AdditionalOptions>
       </AdditionalOptions>
    </TestAction>
@@ -26,6 +71,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "0C1C04151E0292A200D7A43E"
+            BuildableName = "ProtocolBased.app"
+            BlueprintName = "ProtocolBased"
+            ReferencedContainer = "container:ProtocolBased.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
       <AdditionalOptions>
       </AdditionalOptions>
    </LaunchAction>
@@ -35,6 +90,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "0C1C04151E0292A200D7A43E"
+            BuildableName = "ProtocolBased.app"
+            BlueprintName = "ProtocolBased"
+            ReferencedContainer = "container:ProtocolBased.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

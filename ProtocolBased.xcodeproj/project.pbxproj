@@ -14,6 +14,8 @@
 		0C1C04241E0292A300D7A43E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C1C04221E0292A300D7A43E /* LaunchScreen.storyboard */; };
 		0C1C042F1E0292A300D7A43E /* ProtocolBasedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1C042E1E0292A300D7A43E /* ProtocolBasedTests.swift */; };
 		0C1C043A1E0292A300D7A43E /* ProtocolBasedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1C04391E0292A300D7A43E /* ProtocolBasedUITests.swift */; };
+		0C1C04481E0294A500D7A43E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1C04471E0294A500D7A43E /* User.swift */; };
+		0C1C044A1E0294AB00D7A43E /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1C04491E0294AB00D7A43E /* Request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		0C1C04351E0292A300D7A43E /* ProtocolBasedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProtocolBasedUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C1C04391E0292A300D7A43E /* ProtocolBasedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolBasedUITests.swift; sourceTree = "<group>"; };
 		0C1C043B1E0292A300D7A43E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C1C04471E0294A500D7A43E /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		0C1C04491E0294AB00D7A43E /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,8 @@
 				0C1C04201E0292A200D7A43E /* Assets.xcassets */,
 				0C1C04221E0292A300D7A43E /* LaunchScreen.storyboard */,
 				0C1C04251E0292A300D7A43E /* Info.plist */,
+				0C1C04471E0294A500D7A43E /* User.swift */,
+				0C1C04491E0294AB00D7A43E /* Request.swift */,
 			);
 			path = ProtocolBased;
 			sourceTree = "<group>";
@@ -260,7 +266,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0C1C041C1E0292A200D7A43E /* ViewController.swift in Sources */,
+				0C1C044A1E0294AB00D7A43E /* Request.swift in Sources */,
 				0C1C041A1E0292A200D7A43E /* AppDelegate.swift in Sources */,
+				0C1C04481E0294A500D7A43E /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
