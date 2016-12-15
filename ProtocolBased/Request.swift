@@ -13,7 +13,8 @@ enum HTTPMethod: String {
     case post
 }
 
-//Request 应该做的事情应该仅仅是定义请求入口和期望的响应类型
+//1.request entry and response protocol
+//  Request 应该做的事情应该仅仅是定义请求入口和期望的响应类型
 protocol Request {
     var path: String { get }
     var method: HTTPMethod { get }
@@ -21,6 +22,19 @@ protocol Request {
     associatedtype Response: Decodable
 }
 
+//2.send request protocol
+protocol Client {
+    //Request 是含有关联类型的协议，所以它并不能作为独立的类型来使用，我们只能够将它作为类型约束，来限制输入参数 request
+    func send<T: Request>(_ r: T, handler: @escaping(T.Response?) -> Void)
+    var host: String { get }
+}
+
+//3.解析数据protocol
+protocol Decodable {
+    static func parse(data: Data) -> Self?
+}
+
+//4.specific request entry
 struct UserRequest: Request {
     let name: String
     var path: String {
@@ -31,12 +45,7 @@ struct UserRequest: Request {
     typealias Response = User
 }
 
-protocol Client {
-    //Request 是含有关联类型的协议，所以它并不能作为独立的类型来使用，我们只能够将它作为类型约束，来限制输入参数 request
-    func send<T: Request>(_ r: T, handler: @escaping(T.Response?) -> Void)
-    var host: String { get }
-}
-
+//5.specific send
 //提取send方法, 将发送请求的部分和请求本身分离开
 struct URLSessionClient: Client {
     let host = "https://api.onevcat.com"
@@ -60,13 +69,10 @@ struct URLSessionClient: Client {
     }
 }
 
-// 解析数据交给Response来做
-protocol Decodable {
-    static func parse(data: Data) -> Self?
-}
-
+//6.sepcific parse
 extension User: Decodable {
     static func parse(data: Data) -> User? {
         return User(data: data)
     }
 }
+
