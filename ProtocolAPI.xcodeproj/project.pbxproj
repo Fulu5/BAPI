@@ -64,16 +64,11 @@
 		0CEEF3F31E2CA970003B1955 /* ProtocolAPI */ = {
 			isa = PBXGroup;
 			children = (
-				0CEEF3F41E2CA970003B1955 /* AppDelegate.swift */,
 				0CEEF3F61E2CA970003B1955 /* ViewController.swift */,
 				0CEEF4101E2CB416003B1955 /* Protocol */,
-				0CEEF4081E2CA9C3003B1955 /* RequestSomeway.swift */,
-				0CEEF40A1E2CAA62003B1955 /* UserRequest.swift */,
-				0CEEF40C1E2CAA8D003B1955 /* User.swift */,
-				0CEEF3F81E2CA970003B1955 /* Main.storyboard */,
-				0CEEF3FB1E2CA970003B1955 /* Assets.xcassets */,
-				0CEEF3FD1E2CA970003B1955 /* LaunchScreen.storyboard */,
-				0CEEF4001E2CA970003B1955 /* Info.plist */,
+				0CEEF4141E2CB65A003B1955 /* Request */,
+				0CEEF4131E2CB651003B1955 /* Model */,
+				0CEEF4151E2CB664003B1955 /* Other */,
 			);
 			path = ProtocolAPI;
 			sourceTree = "<group>";
@@ -85,6 +80,35 @@
 				0CEEF4111E2CB420003B1955 /* Client.swift */,
 			);
 			name = Protocol;
+			sourceTree = "<group>";
+		};
+		0CEEF4131E2CB651003B1955 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CEEF40C1E2CAA8D003B1955 /* User.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0CEEF4141E2CB65A003B1955 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				0CEEF4081E2CA9C3003B1955 /* RequestSomeway.swift */,
+				0CEEF40A1E2CAA62003B1955 /* UserRequest.swift */,
+			);
+			name = Request;
+			sourceTree = "<group>";
+		};
+		0CEEF4151E2CB664003B1955 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				0CEEF3F41E2CA970003B1955 /* AppDelegate.swift */,
+				0CEEF3F81E2CA970003B1955 /* Main.storyboard */,
+				0CEEF3FB1E2CA970003B1955 /* Assets.xcassets */,
+				0CEEF3FD1E2CA970003B1955 /* LaunchScreen.storyboard */,
+				0CEEF4001E2CA970003B1955 /* Info.plist */,
+			);
+			name = Other;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
